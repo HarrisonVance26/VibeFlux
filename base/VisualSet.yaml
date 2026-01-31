@@ -1,0 +1,164 @@
+
+DefColors:
+  - [132, 56, 255]   # Purple
+  - [82, 0, 133]     # Deep Purple
+  - [203, 56, 255]   # Light Purple
+  - [255, 149, 200]  # Pink
+  - [255, 55, 199]   # Bright Pink
+  - [72, 249, 10]    # Neon Green
+  - [146, 204, 23]   # Olive Green
+  - [61, 219, 134]   # Mint Green
+  - [26, 147, 52]    # Forest Green
+  - [0, 212, 187]    # Aqua
+  - [255, 56, 56]    # Red
+  - [255, 157, 151]  # Light Coral
+  - [255, 112, 31]   # Orange Red
+  - [255, 178, 29]   # Orange
+  - [207, 210, 49]   # Yellow Green
+  - [44, 153, 168]   # Teal
+  - [0, 194, 255]    # Sky Blue
+  - [52, 69, 147]    # Royal Blue
+  - [100, 115, 255]  # Light Blue
+  - [0, 24, 236]     # Deep Blue
+  - [25, 25, 25]     # Dark Gray
+  - [255, 140, 0]    # Dark Orange
+  - [0, 128, 0]      # Green
+  - [255, 0, 255]    # Magenta
+  - [75, 0, 130]     # Indigo
+  - [128, 0, 128]    # Purple (Alternative)
+  - [255, 69, 0]     # Orange Red (Alternative)
+  - [173, 255, 47]   # Green Yellow
+  - [60, 179, 113]   # Medium Sea Green
+  - [123, 104, 238]  # Medium Slate Blue
+  - [106, 90, 205]   # Slate Blue
+  - [64, 224, 208]   # Turquoise
+  - [255, 215, 0]    # Gold
+  - [218, 165, 32]   # Goldenrod
+  - [124, 252, 0]    # Lawn Green
+  - [255, 20, 147]   # Deep Pink
+  - [138, 43, 226]   # Blue Violet
+  - [255, 105, 180]  # Hot Pink
+  - [240, 230, 140]  # Khaki
+  - [154, 205, 50]   # Yellow Green (Alternative)
+  - [173, 216, 230]  # Light Blue (Alternative)
+  - [189, 183, 107]  # Dark Khaki
+  - [244, 164, 96]   # Sandy Brown
+  - [127, 255, 0]    # Chartreuse
+  - [46, 139, 87]    # Sea Green
+  - [148, 0, 211]    # Dark Violet
+  - [199, 21, 133]   # Medium Violet Red
+  - [85, 107, 47]    # Dark Olive Green
+  - [147, 112, 219]  # Medium Purple
+  - [255, 0, 0]      # Bright Red
+  - [0, 0, 255]      # Bright Blue
+  - [0, 255, 0]      # Bright Green
+  - [70, 130, 180]   # Steel Blue
+  - [222, 184, 135]  # Burly Wood
+  - [210, 105, 30]   # Chocolate
+  - [255, 99, 71]    # Tomato
+  - [0, 191, 255]    # Deep Sky Blue
+  - [25, 25, 112]    # Midnight Blue
+  - [128, 0, 0]      # Maroon
+  - [0, 100, 0]      # Dark Green
+  - [255, 255, 0]    # Yellow
+  - [139, 0, 139]    # Dark Magenta
+  - [128, 128, 0]    # Olive
+  - [139, 69, 19]    # Saddle Brown
+  - [255, 127, 80]   # Coral
+  - [32, 178, 170]   # Light Sea Green
+  - [255, 165, 0]    # Orange (Alternative)
+  - [0, 206, 209]    # Dark Turquoise
+  - [233, 150, 122]  # Dark Salmon
+  - [255, 182, 193]  # Light Pink
+  - [255, 228, 225]  # Misty Rose
+  - [245, 245, 220]  # Beige
+  - [176, 196, 222]  # Light Steel Blue
+  - [0, 250, 154]    # Medium Spring Green
+  - [65, 105, 225]   # Royal Blue (Alternative)
+  - [128, 0, 0]      # Maroon (Alternative)
+  - [135, 206, 250]  # Light Sky Blue
+  - [255, 99, 71]    # Tomato (Alternative)
+  - [153, 50, 204]   # Dark Orchid
+  - [255, 69, 0]     # Orange Red (Alternative)
+
+names:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  4: airplane
+  5: bus
+  6: train
+  7: truck
+  8: boat
+  9: traffic light
+  10: fire hydrant
+  11: stop sign
+  12: parking meter
+  13: bench
+  14: bird
+  15: cat
+  16: dog
+  17: horse
+  18: sheep
+  19: cow
+  20: elephant
+  21: bear
+  22: zebra
+  23: giraffe
+  24: backpack
+  25: umbrella
+  26: handbag
+  27: tie
+  28: suitcase
+  29: frisbee
+  30: skis
+  31: snowboard
+  32: sports ball
+  33: kite
+  34: baseball bat
+  35: baseball glove
+  36: skateboard
+  37: surfboard
+  38: tennis racket
+  39: bottle
+  40: wine glass
+  41: cup
+  42: fork
+  43: knife
+  44: spoon
+  45: bowl
+  46: banana
+  47: apple
+  48: sandwich
+  49: orange
+  50: broccoli
+  51: carrot
+  52: hot dog
+  53: pizza
+  54: donut
+  55: cake
+  56: chair
+  57: couch
+  58: potted plant
+  59: bed
+  60: dining table
+  61: toilet
+  62: tv
+  63: laptop
+  64: mouse
+  65: remote
+  66: keyboard
+  67: cell phone
+  68: microwave
+  69: oven
+  70: toaster
+  71: sink
+  72: refrigerator
+  73: book
+  74: clock
+  75: vase
+  76: scissors
+  77: teddy bear
+  78: hair drier
+  79: toothbrush

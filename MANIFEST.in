@@ -1,0 +1,3 @@
+include VibeFlux/*.ttf
+include VibeFlux/base/*.ttf
+include VibeFlux/base/*.yaml
