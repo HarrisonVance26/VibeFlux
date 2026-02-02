@@ -9,9 +9,7 @@ This makes it easy for users to create deep learning applications.
 Python Version Required: 3.7+
 Dependencies: numpy, opencv-python>=4.5.5.64, Pillow>=9.0.1, PySide6>=6.4.2, PyYAML>=6.0, captcha>=0.4
 """
-import platform
 import sys
-import pkg_resources
 import os
 import tempfile
 from PIL import ImageFont
@@ -35,16 +33,10 @@ required_packages = {
     "ruamel.yaml": "0.18.6",
 }
 
-for package, required_version in required_packages.items():
-    try:
-        pkg_resources.get_distribution(package)
-        if required_version:
-            actual_version = pkg_resources.get_distribution(package).version
-            if pkg_resources.parse_version(actual_version) < pkg_resources.parse_version(required_version):
-                warnings.warn(
-                    f"{package} {required_version} or above is recommended, but {actual_version} is installed.")
-    except pkg_resources.DistributionNotFound:
-        warnings.warn(f"{package} is recommended but is not installed.")
+
+if os.environ.get("VIBEFLUX_CHECK_DEPS") == "1":
+    from ._runtime import check_dependencies
+    check_dependencies()
 
 # Get current script path
 current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -79,7 +71,7 @@ except IOError:
         raise IOError("Unable to load font from temporary file: " + str(e))
 
 __package_name__ = 'VibeFlux'
-__version__ = '0.6.1'
+__version__ = '0.7.1'
 __author__ = 'Harrison Vance'
 __email__ = ''
 __license__ = 'AGPL-3.0'
@@ -90,9 +82,8 @@ VERBOSE = True
 try:
     # If QTFUSION_VERBOSE is True, print the information
     if VERBOSE:
-        print(f"{__package_name__} {__version__} "
-              f"Python-{'.'.join(map(str, sys.version_info[:3]))} "
-              f"({platform.system()} "
-              f"{platform.release()})")
+        from .utils.Sysinfo import print_banner
+        VERBOSE = True  # or QF_Config.VERBOSE if you prefer
+        print_banner(__package_name__, __version__, verbose=VERBOSE)
 except Exception as e:
     print(f"Exception occurred: {e}")

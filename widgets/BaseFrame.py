@@ -18,6 +18,7 @@ from ..path import abs_path
 from ..styles import loadYamlSettings
 from ..utils.ImageUtils import vertical_bar, horizontal_bar, verticalBar
 from ..handlers import ImageHandler
+from ..utils.Sysinfo import print_banner
 
 """
 This package provides a collection of utility functions and classes for enhancing the functionality of PyQt/PySide 
@@ -49,12 +50,32 @@ functions that cover common tasks and challenges in GUI application development.
 
 
 def verbose_class(cls):
-    """A decorator for classes to print a message when a class is defined."""
+    """
+    Class decorator for VibeFlux to optionally print a single runtime banner.
+
+    This decorator is intended to be applied to classes inside the VibeFlux package.
+    When `QF_Config.VERBOSE` is enabled, it prints a one-time banner containing:
+    package name, package version, Python version, and OS details.
+
+    Notes
+    -----
+    - The banner is printed via `print_banner(...)`, which internally uses a
+      one-time guard (`sys._vibeflux_banner_printed`) to avoid repeated output
+      across multiple imports/classes.
+
+    Parameters
+    ----------
+    cls : type
+        The class object being decorated.
+
+    Returns
+    -------
+    type
+        The same class object `cls` (unmodified).
+    """
     if QF_Config.VERBOSE:
-        print(f"{__package_name__} {__version__} "
-              f"Python-{'.'.join(map(str, sys.version_info[:3]))} "
-              f"({platform.system()} {platform.release()})")
-        # A decorator for classes in the VibeFlux package to perform multiple tasks based on the arguments provided.
+        print_banner(__package_name__, __version__, verbose=True)
+        # NOTE: If you later extend this decorator to do more tasks, keep them here.
     return cls
 
 
