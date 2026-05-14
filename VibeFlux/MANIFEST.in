@@ -1,0 +1,4 @@
+include VibeFlux/base/*.yaml
+include VibeFlux/config/api_keys.example.json
+recursive-include VibeFlux/llms *.py
+recursive-include VibeFlux/examples *.py
