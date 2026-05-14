@@ -1,66 +1,29 @@
-# =====================
-# Python common
-# =====================
+# Python cache and build output
 __pycache__/
 *.py[cod]
-*.pyd
-*.so
-*.dll
+*.pyo
+*.egg-info/
+build/
+dist/
 
-# Virtual env / conda env (if created inside repo)
+# Virtual environments
 .venv/
 venv/
 env/
-.conda/
-.condarc
 
-# =====================
-# Build / packaging
-# =====================
-build/
-dist/
-*.egg-info/
-.eggs/
-pip-wheel-metadata/
-wheelhouse/
-
-# If you run PyInstaller locally
-*.spec
-
-# =====================
-# Test / lint caches
-# =====================
-.pytest_cache/
-.tox/
-.nox/
-coverage.xml
-htmlcov/
-.coverage
-.mypy_cache/
-.ruff_cache/
-.cache/
-
-# =====================
-# IDE / editor
-# =====================
-.vscode/
-.idea/
-*.iml
-
-# =====================
-# OS files
-# =====================
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# =====================
-# Logs & local secrets
-# =====================
-*.log
-*.tmp
-
+# Local secrets and runtime config
 api_keys.json
-*.secret*
 .env
 .env.*
+
+# Local databases and logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,51 @@
+{
+  "active_provider": "qwen",
+  "active_model": "qwen-plus",
+  "providers": {
+    "deepseek": {
+      "api_key": "",
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY"
+    },
+    "qwen": {
+      "api_key": "",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key_env": "DASHSCOPE_API_KEY"
+    },
+    "doubao": {
+      "api_key": "",
+      "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+      "api_key_env": "ARK_API_KEY"
+    },
+    "zhipu": {
+      "api_key": "",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+      "api_key_env": "ZAI_API_KEY"
+    },
+    "custom": {
+      "api_key": "",
+      "base_url": "",
+      "api_key_env": ""
+    }
+  },
+  "models": {
+    "custom": [
+      {
+        "name": "my-custom-model",
+        "provider": "custom",
+        "api_model": "my-custom-model",
+        "model_type": "chat",
+        "capabilities": ["text", "stream", "json"],
+        "description": "Replace this with a model served by an OpenAI-compatible endpoint.",
+        "aliases": [],
+        "extra": {}
+      }
+    ]
+  },
+  "runtime": {
+    "timeout": 60,
+    "max_retries": 2,
+    "temperature": 0.2,
+    "max_file_chars": 20000
+  }
+}

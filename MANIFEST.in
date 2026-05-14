@@ -1,3 +1,19 @@
 include VibeFlux/*.ttf
+include VibeFlux/*.qrc
+include VibeFlux/*.ui
+include VibeFlux/CHANGELOG.md
+include VibeFlux/LICENSE
+include VibeFlux/README.md
+include VibeFlux/qss/*.qss
+include VibeFlux/config/*.yaml
+include VibeFlux/config/*.json
 include VibeFlux/base/*.ttf
 include VibeFlux/base/*.yaml
+recursive-include VibeFlux *.ttf *.yaml *.qss *.md *.json *.qrc *.ui
+recursive-include VibeFlux/default_icons *.png *.svg
+recursive-include VibeFlux/examples *.py
+recursive-include docs *.md
+prune upload
+prune scripts
+include LICENSE
+include README.md

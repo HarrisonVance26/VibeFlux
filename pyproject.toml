@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "VibeFlux"
+version = "0.8.0"
+description = "VibeFlux is a pre-alpha Python toolkit for building computer-vision desktop applications with PySide6 (Qt), OpenCV, Pillow, reusable UI widgets, visual utilities, SQLite helpers, and a lightweight OpenAI-compatible LLM client layer."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.7"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Harrison Vance", email = "seasalwesley@gmail.com" }]
+urls = { Homepage = "https://pypi.org/project/VibeFlux/", Repository = "https://github.com/HarrisonVance26/VibeFlux" }
+
+dependencies = [
+  "numpy",
+  "opencv-python>=4.5.5.64",
+  "Pillow>=9.0.1",
+  "PySide6>=6.4.2",
+  "PyYAML>=6.0",
+  "captcha>=0.4",
+  "aggdraw>=1.3.19",
+  "ruamel.yaml>=0.18.6",
+]
+
+# Keep dev status / OS / topic / python versions, but remove any License classifier
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: User Interfaces",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS",
+]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4.0.0"]
+torch = ["torch"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["VibeFlux*"]
+
+[tool.setuptools.package-data]
+VibeFlux = [
+  "*.ttf",
+  "*.qrc",
+  "*.ui",
+  "*.md",
+  "config/*.yaml",
+  "config/*.json",
+  "base/*.ttf",
+  "base/*.yaml",
+  "qss/*.qss",
+  "default_icons/**/*.png",
+  "default_icons/**/*.svg",
+  "examples/*.py",
+]
